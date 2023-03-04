@@ -1,0 +1,648 @@
+/* Common CSS Part Start */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  display: inline-block;
+}
+ul, ol{
+  list-style: none;
+}
+img{
+  vertical-align: middle;
+}
+.container{
+  width: 940px;
+  margin: 0 auto;
+}
+@font-face{
+  src: url(../myriad-pro-cufonfonts/MYRIADPRO-BOLD.OTF);
+  font-family: "myriad-bold";
+}
+@font-face{
+  src: url(../myriad-pro-cufonfonts/MYRIADPRO-REGULAR.OTF);
+  font-family: "myriad-regular";
+}
+.clear{
+  clear: both;
+}
+/* Common CSS Part End */
+/* Header CSS Part Start */
+#header{
+  height: 32px;
+  background: #0872b9;
+}
+.header-text{
+  width: 20%;
+  float: left;
+  height: 32px;
+}
+.header-text p{
+  color: #e7e7e7;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 32px;
+}
+.header-icon{
+  width: 80%;
+  float: left;
+  height: 32px;
+}
+.header-icon ul{
+  float: right;
+}
+.header-icon ul li{
+  float: left;
+  line-height: 32px;
+}
+.header-icon ul li a{
+  margin-left: 25px;
+  color: #e7e7e7;
+  font-size: 14px;
+  transition: all linear 0.4s;
+}
+.header-icon ul li a:hover{
+  color: #353535;
+}
+/* Header CSS Part End */
+/* Navbar CSS Part Start */
+#navbar{
+  background: #ffffff;
+  height: 85px;
+}
+.navbar-logo{
+  width: 20%;
+  height: 85px;
+  float: left;
+}
+.navbar-logo a{
+  line-height: 85px;
+}
+.navbar-menu{
+  width: 80%;
+  height: 85px;
+  float: left;
+}
+.navbar-menu ul{
+  float: right;
+}
+.navbar-menu ul li{
+  float: left;
+  line-height: 85px;
+}
+.navbar-menu ul li a{
+  margin-left: 15px;
+  color: #353535;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: 'myriad-regular';
+  transition: all linear 0.4s;
+}
+.navbar-menu ul li a:hover{
+  color: #0872b9;
+}
+/* Navbar CSS Part End */
+/* Banner CSS Part Start */
+#banner{
+  background: url(../images/03-Beatles-Banner-Image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  position: relative;
+  z-index: 1;
+}
+#banner:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+.banner-text{
+  width: 460px;
+  float: right;
+  text-align: right;
+}
+.banner-text h3{
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.banner-text h1{
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.banner-text p{
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 32px;
+}
+.banner-text a{
+  border: 1px solid #ffffff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-left: 20px;
+  padding: 10px 20px;
+  transition: all linear 0.4s;
+}
+.banner-text a:hover{
+  background: #0872b9;
+  border: 1px solid #0872b9;
+}
+/* Banner CSS Part End */
+/* About CSS Part About */
+#about{
+  text-align: center;
+  padding-top: 60px;
+}
+.common-title{
+  position: relative;
+  display: inline-block;
+}
+.common-title img{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.common-title h3{
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #353535;
+  text-transform: uppercase;
+}
+.about-row{
+  padding-top: 40px;
+}
+.about-col{
+  float: left;
+  width: 380px;
+}
+.about-col-text {
+  width: 540px;
+  float: left;
+  padding-top: 45px;
+  padding-bottom: 40px;
+  margin-left: 20px;
+}
+.about-col-text p {
+  text-align: justify;
+  color: #555555;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 20px;
+}
+.about-col-text p span{
+  display: block;
+  padding-top: 35px;
+}
+/* About CSS Part End */
+/* Service CSS Part Start */
+#service{
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.service-row{
+  padding-top: 70px;
+}
+.service-col{
+  width: 32%;
+  background: #f1f1f1;
+  padding: 50px 20px 20px;
+  position: relative;
+  transition: all linear 0.4s;
+  float: left;
+  margin-right: 18px;
+}
+.service-col:hover{
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2);
+}
+.service-row .service-col:nth-child(3){
+  margin-right: 0;
+}
+.service-col h3{
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #353535;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.service-col p{
+  text-align: center;
+  color: #555555;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 24px;
+}
+.service-col-icon{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #f1f1f1;
+  line-height: 70px;
+  border: 1px solid #ffffff;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all linear 0.4s;
+}
+.service-col-icon:before{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 70px;
+  height: 70px;
+  border: 1px solid #e4e4e4;
+  border-radius: 50%;
+  transition: all linear 0.4s;
+}
+.service-col-icon::after{
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  width: 72px;
+  height: 72px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+.service-col-icon:hover{
+  background: #5bc5f4;
+}
+.service-col-icon:hover:before{
+  border: 1px solid #5bc5f4;
+}
+/* Service CSS Part End */
+/* Portfolio CSS Part Start */
+#portfolio{
+  text-align: center;
+  padding-bottom: 60px;
+}
+.portfolio-row{
+  margin-top: 30px;
+}
+.portfolio-col{
+  float: left;
+  margin-right: 20px;
+}
+.portfolio-col .portfolio-image:first-child{
+  margin-bottom: 20px;
+}
+.portfolio-row .portfolio-col:last-child{
+  margin-right: 0;
+}
+.portfolio-image{
+  position: relative;
+}
+.portfolio-image-overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: all linear 0.6s;
+}
+.portfolio-image-overlay a i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  color: #ffffff;
+  background: #5bc5f4;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 40px;
+}
+.portfolio-image:hover .portfolio-image-overlay{
+  opacity: 1;
+}
+/* Portfolio CSS Part End */
+/* Team CSS Part Start */
+#team{
+  text-align: center;
+  padding-bottom: 60px;
+}
+.team-row{
+  margin-top: 30px;
+}
+.team-col{
+  float: left;
+  margin-right: 20px;
+}
+.team-col:last-child{
+  margin-right: 0;
+}
+.team-details h3{
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #353535;
+  text-transform: uppercase;
+  transition: all linear 0.6s;  
+}
+.team-col:hover .team-details h3{
+  color: #5bc5f4;
+}
+.team-details p{
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #555555;
+  text-transform: capitalize;
+}
+.team-image{
+  position: relative;
+}
+.team-overlay{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: all linear 0.6s;
+}
+.team-col:hover .team-overlay{
+  opacity: 1;
+  width: 80px;
+  height: 100%;
+}
+.team-overlay ul{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 35px;
+}
+.team-overlay ul li a{
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  line-height: 40px;
+  color: #ffffff;
+  font-size: 20px;
+  margin-bottom: 15px;
+  margin-right: 20px;
+  transition: all linear 0.6s;
+}
+.team-overlay ul li a:hover{
+  background: #5bc5f4;
+  border: 1px solid #5bc5f4;
+}
+/* Team CSS Part End */
+/* Testimonial CSS Part Start */
+#testimonial{
+  text-align: center;
+}
+.testimonial-row{
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+.testimonial-col{
+  width: 460px;
+  float: left;
+  margin-right: 20px;
+}
+.testimonial-col:nth-child(2){
+  margin-right: 0;
+}
+.testimonial-image img{
+  margin-bottom: 30px;
+}
+.testimonial-detail{
+  padding: 20px;
+  background: #f1f1f1;
+  position: relative;
+}
+.testimonial-detail h3{
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #353535;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.testimonial-detail i{
+  color: #5bc5f4;
+  font-size: 12px;
+  line-height: 24px;
+}
+.testimonial-detail h4{
+  font-family: 'Oswald', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #555555;
+  line-height: 24px;
+}
+.testimonial-detail p{
+  font-family: 'Oswald', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #555555;
+  line-height: 24px;
+}
+.testimonial-detail:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background: #f1f1f1;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -5%) rotate(45deg);
+  z-index: -1;
+}
+/* Testimonial CSS Part End */
+/* Footer CSS Part Start */
+#footer{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #353535;
+}
+.footer-col-1{
+  width: 220px;
+  margin-right: 20px;
+  float: left;
+}
+.footer-col-1-logo{
+  margin-bottom: 20px;
+}
+.footer-col-1-text p{
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'open-sans', sans-serif;
+  color: #f1f1f1;
+  line-height: 24px;
+}
+.footer-col-1-text p span{
+  display: block;
+  margin-top: 24px;
+}
+.footer-col-2{
+  width: 220px;
+  margin-right: 20px;
+  float: left;
+}
+.footer-col-heading h3{
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 24px;
+  margin-top: 8px;
+  margin-bottom: 32px;
+}
+.footer-col-2-icon{
+  text-align: center;
+  float: left;
+}
+.footer-col-2-icon ul li a{
+  color: #ffffff;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 16px;
+  background: #5bc5f4;
+  margin: 10px 10px 10px 0px;
+  line-height: 35px;
+}
+.footer-col-2-detail{
+  float: left;
+  padding-top: 10px;
+}
+.footer-col-2-phone p{
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'open-sans', sans-serif;
+  color: #f1f1f1;
+  line-height: 24px;
+}
+.footer-col-2-mail{
+  padding-top: 5px;
+}
+.footer-col-2-mail p{
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'open-sans', sans-serif;
+  color: #f1f1f1;
+  line-height: 24px;
+}
+.footer-col-2-web{
+  padding-top: 5px;
+}
+.footer-col-2-web p{
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'open-sans', sans-serif;
+  color: #f1f1f1;
+  line-height: 24px;
+}
+.footer-col-3{
+  width: 140px;
+  margin-right: 20px;
+  float: left;
+}
+.footer-left-menu{
+  float: left;
+  margin-right: 20px;
+}
+.footer-left-menu ul li a{
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'open-sans', sans-serif;
+  color: #ffffff;
+  line-height: 36px;
+  transition: all linear 0.6s;
+}
+.footer-left-menu ul li a:hover{
+  color: #5bc5f4;
+}
+.footer-right-menu{
+  float: left;
+}
+.footer-right-menu ul li a{
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'open-sans', sans-serif;
+  color: #ffffff;
+  line-height: 36px;
+  transition: all linear 0.6s;
+}
+.footer-right-menu ul li a:hover{
+  color: #5bc5f4;
+}
+.footer-col-4-image-row{
+  width: 300px;
+  float: left;
+}
+.footer-col-4-image-col{
+  width: 90px;
+  float: left;
+  margin-right: 15px;
+}
+.footer-col-4-image-col:last-child{
+  margin-right: 0;
+}
+.footer-col-4-image-col img{
+  margin-bottom: 15px;
+}
+.footer-col-4-image-col img:last-child{
+  margin-bottom: 0;
+}
+/* Footer CSS Part End */
+/* CopyRight CSS Part Start */
+#copyright{
+  height: 45px;
+  background: #555555;
+}
+.copyright-row{
+  text-align: center;
+}
+.copyright-row p{
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'open-sans', sans-serif;
+  color: #ffffff;
+  line-height: 45px;
+}
+.copyright-row p i{
+  font-size: 13px;
+}
+.copyright-row p a{
+  color: #5bc5f4;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: 'open-sans', sans-serif;
+}
+/* CopyRight CSS Part End */
